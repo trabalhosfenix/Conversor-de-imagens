@@ -1,0 +1,254 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #603280;
+    }
+
+    ::selection {
+      color: white;
+      background: #9562b6;
+
+    }
+
+    .container {
+      width: 430px;
+      background: #E2E3DE;
+      border-radius: 5px;
+      padding: 30px;
+      box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .container header {
+      color: #603280;
+      font-size: 27px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .container #select-area {
+      height: 167px;
+      display: flex;
+      cursor: pointer;
+      margin: 30px 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 5px;
+      border: 2px dashed #9562b6;
+
+    }
+
+    #select-area :where(i, p) {
+      color: #9562b6;
+      font-weight: bold;
+    }
+
+    #select-area i {
+      font-size: 50px;
+    }
+
+    #select-area p {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .btn-converter,
+    #convert-button {
+      padding: 10px 25px;
+      text-align: center;
+      margin-top: 10%;
+      font-size: 15px;
+      font-weight: 500;
+      border: none;
+      outline: none;
+      background: #603280;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #convert-button:disabled {
+      opacity: 0.2;
+    }
+
+
+    img#file-preview {
+      width: 50%;
+      border-radius: 4px;
+    }
+
+    .preview {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    #remove-img {
+      color: #603280;
+    }
+
+    #remove-img {
+      color: #603280;
+      margin-top: 10%;
+      cursor: pointer;
+    }
+
+    .btn-div {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #603280;
+    }
+
+    li {
+      float: left;
+      font-size: 20px;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .user{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #9562b6;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .text-div p {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .text-div h2 {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      color: #603280;
+    }
+
+    .text-div a {
+      color: #603280;
+      font-size: 18px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+
+    .footer {
+      padding-top: 10px;
+      background-color: #603280;
+      height: 55px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+
+      padding-right: 20px;
+    }
+
+    .footer p {
+      color: white;
+      padding-top: 5px;
+
+    }
+
+    #mensagem-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @keyframes tada {
+      from {
+        transform: scale(1);
+      }
+
+      10%,
+      20% {
+        transform: scale(0.9) rotate(-3deg);
+      }
+
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale(1.1) rotate(3deg);
+      }
+
+      40%,
+      60%,
+      80% {
+        transform: scale(1.1) rotate(-3deg);
+      }
+
+      to {
+        transform: scale(1) rotate(0);
+      }
+    }
+
+    .tada {
+      animation: tada 0.5s ease-in-out;
+    }
+ 

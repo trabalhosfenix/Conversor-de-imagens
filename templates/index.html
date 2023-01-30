@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #603280;
+        }
+
+        ::selection {
+            color: white;
+            background: #9562b6;
+
+        }
+
+        .container {
+            width: 430px;
+            background: #E2E3DE;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+
+        }
+
+        .container header {
+            color: #603280;
+            font-size: 27px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .container #select-area {
+            height: 67px;
+            display: flex;
+            cursor: pointer;
+            margin: 30px 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            border: 2px dashed #9562b6;
+
+
+        }
+
+        #select-area :where(i, p) {
+            color: #9562b6;
+            font-weight: bold;
+        }
+
+        #select-area i {
+            font-size: 50px;
+        }
+
+        #select-area p {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        #select-area a {
+            color: #603280;
+            font-size: 25px;
+            text-decoration: none;
+            padding-bottom: 7px;
+        }
+
+        .container h2 {
+            color: #603280;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #603280;
+        }
+
+        li {
+            float: left;
+            font-size: 20px;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #9562b6;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+        .text-div p {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .text-div h2 {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            color: #603280;
+        }
+
+        .text-div a {
+            color: #603280;
+            font-size: 18px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+
+        .footer {
+            padding-top: 10px;
+            background-color: #603280;
+            height: 55px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+
+            padding-right: 20px;
+        }
+
+        .footer p {
+            color: white;
+            padding-top: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    {% include 'nav.html' %}
+    {% include 'main_home.html' %}
+    
+
+</body>
+
+</html>
