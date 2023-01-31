@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 .logo {
@@ -51,17 +52,36 @@ main {
   border: 2px dashed #9562b6;
 
 }
+a.file-input {
+  display: flex;
+  line-height: 50px;
+  gap: 10px;
+  font-weight: 600;
+  color: #9562b6;
+}
 
-#select-area :where(i, p) {
+.select-area.home :where(i, p), #select-area :where(i, p) {
   color: #9562b6;
   font-weight: bold;
 }
 
-#select-area i {
+.container i, #select-area i {
   font-size: 50px;
 }
 
-#select-area p {
+.select-area.home {
+  height: 70px;
+  display: flex;
+  cursor: pointer;
+  margin: 8px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #9562b6;
+}
+
+.container p, #select-area p {
   margin-top: 15px;
   font-size: 16px;
 }
