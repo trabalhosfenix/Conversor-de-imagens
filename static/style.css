@@ -145,11 +145,13 @@ li {
 
 li a,
 .dropbtn {
+  min-width: 143px;
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 10px;
   text-decoration: none;
+
 }
 
 .user {
@@ -168,27 +170,35 @@ li a:hover,
 
 li.dropdown {
   display: inline-block;
+
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: #f6efef;
+  font-size: 15px;
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 8px10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #9562b6;
+  color: white;
+}
+
+.select-area.home:hover {
+    background-color:#eee;
+    transform:scale(1.02)
 }
 
 .dropdown:hover .dropdown-content {
