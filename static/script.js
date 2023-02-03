@@ -76,9 +76,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function convertToPNG() {
-
     var image = document.getElementById("image").files[0];
-
     if (!image) {
       mensagem("Please select an image.");
       return;
@@ -89,21 +87,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
       method: "POST",
       body: formData
     }).then(response => response.blob())
-
       .then(blob => {
-
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
         link.download = image.name.replace(`${imageType().input}`, `${imageType().output}`).trim()
-
         link.click();
       })
       .catch(error => {
         mensagem("Ocorreu um erro na conversão da imagem.")
-      });
-  }
-
+      });  
+    }
 });
 
 function mensagem(mensagem) {

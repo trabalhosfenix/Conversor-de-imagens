@@ -42,7 +42,7 @@ def pngtopdf():
 
 """  <--------------------> """
 
-@app.route("/api/pngtojpg", methods=["POST"])
+@app.route("/conversor/api/pngtojpg", methods=["POST"])
 def png_to_jpg():
     image = request.files["image"]
     image_name = image.filename.split(".")[0] + ".jpg"
@@ -55,7 +55,7 @@ def png_to_jpg():
     response.headers.set('Content-Disposition', 'attachment', filename={image_name})
     return response
 
-@app.route("/api/jpgtopng", methods=["POST"])
+@app.route("/conversor/api/jpgtopng", methods=["POST"])
 def jpg_to_png():
     image = request.files["image"]
     image_name = image.filename.split(".")[0] + ".png"
@@ -70,7 +70,7 @@ def jpg_to_png():
    
     return response
 
-@app.route("/api/webptopng", methods=["POST"])
+@app.route("/conversor/api/webptopng", methods=["POST"])
 def webp_to_png():
     image = request.files["image"]
     image_name = image.filename.split(".")[0] + ".png"
@@ -83,7 +83,7 @@ def webp_to_png():
     response.headers.set('Content-Disposition', 'attachment', filename={image_name})
     return response
 
-@app.route('/api/pngtowebp', methods=['POST'])
+@app.route('/conversor/api/pngtowebp', methods=['POST'])
 def png_to_webp():
     image = request.files['image']
     image_name = image.filename.split(".")[0] + ".webp"
@@ -97,7 +97,7 @@ def png_to_webp():
 
     return response
 
-@app.route("/api/bmptopng", methods=["POST"])
+@app.route("/conversor/api/bmptopng", methods=["POST"])
 def bmp_to_png():
     image = request.files["image"]
     image_name = image.filename.split(".")[0] + ".png"
@@ -110,7 +110,7 @@ def bmp_to_png():
     response.headers.set('Content-Disposition', 'attachment', filename={image_name})
     return response
 
-@app.route("/api/pngtopdf", methods=["POST"])
+@app.route("/conversor/api/pngtopdf", methods=["POST"])
 def png_to_pdf():
     image = request.files["image"]
     image_name = image.filename.split(".")[0] + ".pdf"
@@ -123,7 +123,7 @@ def png_to_pdf():
     response.headers.set('Content-Disposition', 'attachment', filename={image_name})
     return response
 
-@app.route("/api/pngtobmp", methods=["POST"])
+@app.route("/conversor/api/pngtobmp", methods=["POST"])
 def png_to_bmp():
     image = request.files["image"]
     image_name = image.filename.split(".")[0] + ".bmp"
